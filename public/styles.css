@@ -1,0 +1,566 @@
+*{
+    margin:0;
+    padding:0;
+
+
+
+
+}
+
+
+
+.header{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(7, 51, 245, 0.7), rgba(233, 21, 211, 0.7)), url(/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+.menu{
+    flex:1;
+    text-align: right;
+    top:0px;
+    right:0px;
+
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 30px 30px;
+
+
+}
+
+/* menu color */
+.menu ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    color: rgb(247, 123, 212);
+    text-shadow: 2px 2px 5px rgb(28, 149, 230);    
+
+}
+
+
+.menu ul li::after
+{
+content:"";
+width:0%;
+height:3px;
+background-color: rgb(106, 203, 255);
+display:block;
+transition:0.7s;
+}
+
+.menu ul li:hover::after
+{ 
+    width:100%;
+}
+
+
+.text-box{
+    width: 90%;
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+
+}
+
+
+.text-box h1 {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 60px;
+    color: paleturquoise;
+    text-shadow: 2px 2px 5px rgb(106, 203, 255);
+}
+
+
+.text-box p {
+
+        font-family: Verdana, sans-serif;
+        font-size: 20px;
+        color: paleturquoise;
+        text-shadow: 2px 2px rgb(92, 33, 120);
+}
+
+
+.text-box .bt1{
+    text-decoration: none;
+    font-family: 'Waterfall', cursive;
+    font-size: 15px;
+    color: paleturquoise; 
+    border: 2px solid rgb(247, 123, 212);
+    padding: 15px 30px;
+    background: transparent;
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+    transition: 0.8s;
+}
+
+.text-box .bt1:hover{
+    background-color: rgb(247, 123, 212, 0.5);
+
+}
+
+nav .fa{
+    display:none;
+}
+
+
+@media (max-width:700px) 
+{
+
+    .text-box h1{
+        font-size:40px ;
+    }
+    
+    .text-box p{
+        font-size:18px ;
+    }
+
+    .menu ul li{
+        display: block;
+    }
+
+
+
+    nav .menu{
+        position:absolute;
+        background: rgb(125, 43, 152);
+        height:100vh;
+        width:200px;
+        top:0px;
+        right:-200px
+        text-alignl:left;
+        z-index:2;
+    }
+    
+    
+    nav .fa{
+        display: block;
+        font-size: 30px;
+        color: rgb(255, 164, 247);
+        margin: 20px;
+        cursor: pointer;
+    }
+
+}
+
+
+.festival{
+    width: 80%;
+    margin-top: 35px;
+    text-align:center;
+    margin:auto;
+
+}
+
+
+
+.festival h2{
+    font-size: 50px;
+    padding: 10px;
+    color: rgb(0, 9, 139);
+    font-family: Verdana, sans-serif;
+
+}
+
+
+.festival p{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(106, 3, 94);
+    font-family: Verdana, sans-serif;
+    font-weight: 200;
+}
+
+
+
+.festival .row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+
+
+
+.festival .col{
+    flex-basis: 32%;
+    background: rgb(212, 172, 200);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+
+}
+
+
+.festival .col h3{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+
+.festival .col:hover {
+    box-shadow: 0 0 20px 0 rgb(63, 21, 51)
+
+}
+
+@media (max-width:700px)
+{
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+.pictures{
+    width: 80%;
+    margin-top: 35px;
+    text-align: center;
+    margin: auto;
+
+}
+
+
+.pictures h2{
+    font-size: 50px;
+    padding: 10px;
+    color: rgb(0, 9, 139);
+    font-family: Verdana, sans-serif;
+
+}
+
+
+.pictures p{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(106, 3, 94);
+    font-family: Verdana, sans-serif;
+    font-weight: 200;
+}
+
+
+
+.pictures .row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.pictures .col{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+
+}
+
+.pictures .col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.pictures img{
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+
+
+.col h3{
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pictures .col:hover {
+    box-shadow: 0 0 20px 0 rgb(63, 21, 51)
+
+}
+
+.layer h3{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 500;
+    font-size: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    translate: translateX(-50%);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.layer:hover h3{
+    bottom: 45%;
+    opacity: 1;
+}
+
+.layer{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    background-color: gray;
+}
+
+.footer h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(216, 182, 210);
+}
+
+.footer p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: rgb(49, 0, 72);
+}
+
+.footer icons{
+    margin: 20px 0px;
+
+}
+
+.footer fa{
+    font-size: 25px;
+    color:aqua;
+    padding: 20px;
+}
+
+/* Conact header section */
+
+.contact-header{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(7, 51, 245, 0.7), rgba(233, 21, 211, 0.7)), url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.map{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.map iframe{
+    width: 100%;
+    border: 5px solid rgb(187, 94, 190);
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-us .row{
+    display: flex;
+}
+
+.contact-us .col{
+    flex-basis: 48%;
+    margin-top: 30px 0;
+}
+
+.contact-us .col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-us .col div .fa{
+    font-size: 25px;
+    margin: 10px;
+    margin-right: 32px;
+    color: rgb(106, 3, 94);
+}
+
+.contact-us .col h4{
+    font-size: 18px;
+    color: rgb(106, 3, 94);
+    font-family: Verdana, sans-serif;
+
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    outline: none;
+    border: 2px solid rgb(167, 114, 152);
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+
+.contact-form .btn1{
+    text-decoration: none;
+    font-family: 'Waterfall', cursive;
+    font-size: 13px;
+    color: rgb(106, 3, 94); 
+    border: 2px solid rgb(167, 114, 152);
+    padding: 4px 12px;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(250, 226, 245);
+    transition: 0.8s;
+}
+
+.contact-form .btn1:hover{
+    background-color: rgb(239, 120, 205);
+}
+
+
+/* FAQ CSS */
+
+.faq-header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(7, 51, 245, 0.7), rgba(233, 21, 211, 0.7)), url(images/faq2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.faq{
+    padding: 4%;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(106, 3, 94);
+    height: 50vh;
+    width: 80%;
+    margin: auto;
+    margin-block-end: 15%;
+    
+}
+
+.faq summary{
+    font-size: 23px;
+    font-weight: 400;
+    background-color: rgb(255, 167, 230);
+    color: rgb(106, 3, 94);
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq p{
+    font-size: 20px;
+}
+
+details[open] summary ~*{
+    animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep{
+    0% {opacity: 0; margin-top: -10px;}
+    100% {opacity: 1; margin-top: 0px;}
+}
+
+details > summary::after{
+    position: absolute;
+    content: "+";
+    right: 20px;
+
+}
+
+details[open]> summary::after{
+    position: absolute;
+    content: "-";
+    right: 20px;
+}
+
+.answer p{
+    font-size: 20px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+/* Events section */
+
+.events-header{
+    width:100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(7, 51, 245, 0.7), rgba(233, 21, 211, 0.7)), url(images/eventsheader2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.events img{
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+
+
+.events img:hover{
+    background-color: rgb(0, 0, 255, 0.5);
+}
+
+.events button{
+    padding: 5px;
+    color: rgb(236, 232, 232);
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    background-image: linear-gradient(to right,rgba(191, 106, 228, 0.7) , rgba(243, 97, 228, 0.7));
+    border-radius: 7px;
+    border-color: rgb(236, 232, 232);
+}
+
+.events button:hover{
+    background-color: rgb(0, 0, 255, 0.5);
+    cursor: pointer;
+}
+
+.faq_button .action{\
+
+}

@@ -1,0 +1,162 @@
+<!-- //views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">    
+
+
+</head>
+
+<body>
+    
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="" width="130px" height="130px"></a>
+
+            <div class="menu" id="menu-block">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul> 
+                    <li> <a href="/">Home</a></li>
+                    <li> <a href="/events">Events</a> </li>
+                    <li> <a href="/guests">Guests</a> </li>
+                    <li> <a href="/faq">FAQ</a> </li>
+                    <li> <a href="/contact">Contact</a> </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-list" onclick="show()"></i>
+
+
+        </nav>
+
+
+        <div class="text-box">
+
+            <h1>Intuitive Festival never sleeps! </h1>
+            <p>The magic of the Intuitive Festival will transcend you across vibrant dimensions through mesmerizing music, exhilarating games, challenges, and delectable culinary delights. <br><br><br>Make sure you save the dates for an unforgettable journey from 1st October through to the 31st of October .</p>
+            <a href="/views/events.ejs" class="bt1">Click here to get more Info</a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- this section will display text data in 3 collums -->
+
+
+    <section class="festival">
+        <h2>Ongoing Festival</h2>
+        <p>Main events and activities that will take place this year:</p>
+         <div class="row">
+            <div class="col">
+                <h3>1st WEEK EVENTS</h3>
+                <p>On the first week you will explore different games and chalanges such as travel hunt, VR experience game or adventure. <br>You are invited for a make-up demonstration and free costumes and afterwards for te carnival show.<br><br>If you like to chill with a coktail or to enjoy music, there will be 6 different music area that you can choose, where different different genre of music will play all day<br><br> In the evening, make sure you won't miss the famous Lost Frequencies whihc will perform on the big stage</p>
+
+            </div>
+
+
+            <div class="col">
+                <h3>2nd WEEK EVENTS</h3>
+                <p>If you didn't have time to explore all of the amazing stuff first week was offering, don't worry, they will continue on the second week! <br><br>On top of that, an amazing "color war" will take place. Don't worry about your clothes, a free white outfit will be offered! <br><br>An amazing surprise is waiting for you! the famous Taylor Swift will come to perform on the main stage!</p>
+
+            </div>
+
+
+            <div class="col">
+                <h3>3rd & 4th WEEK EVENTS</h3>
+                <p>The famous food competition will take place on the 3th and the 4th week! The most voted dish will earn an amazing prize, a holiday in Tenerife for 2! <br><br>More than that, water war challenge and different other games are waiting for you! <br><br>On the last week make sure you save some energy for the best surprise: the famous American singer Jason Derulo, who will perform on the Main Stage!
+                </p>
+
+            </div>
+
+
+         </div>
+
+    </section>
+
+
+
+<!-- section to add 3 pictures -->
+<section class="pictures">
+    <h2>Main Events</h2>
+    <p>Here are the general information about the events and activites:</p>
+     <div class="row">
+        <div class="col">
+            <img src="images/picture1.jpg" alt="">
+            <div class="layer">
+                <h3>Artistic Performances</h3>
+            </div>
+
+        </div>
+
+
+        <div class="col">
+            <img src="images/picture2.jpg" alt="">
+            <div class="layer">
+                <h3>Concerts with Famous Artists</h3>
+            </div>
+
+        </div>
+
+
+        <div class="col">
+            <img src="images/picture3.jpg" alt="">
+            <div class="layer">
+                <h3>Games and Challenges</h3>
+            </div>
+
+        </div>
+
+
+     </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>This website and its content are copyright of Intuitive LTD - © Intuitive Festival 2023. All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+<p>Copyright to QAHE</p>
+
+</section>
+
+
+
+
+
+<!-- JavaScript -->
+<script>
+    var block = document.getElementById("menu-block");
+    function show() {
+        block.style.right = "0";
+        block.style.transition="1s";
+    }
+
+    function hide() {
+        block.style.right = "-200px";
+        block.style.transition="1s";
+    }
+</script>
+
+</body>
+</html>

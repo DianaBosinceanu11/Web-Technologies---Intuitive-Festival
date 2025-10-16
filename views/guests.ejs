@@ -1,0 +1,160 @@
+<!-- //views/guests.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">    
+
+
+</head>
+
+<body>
+
+    <section class="events-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="" width="130px" height="130px"></a>
+
+            <div class="menu" id="menu-block">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul> 
+                    <li> <a href="/">Home</a></li>
+                    <li> <a href="/events">Events</a> </li>
+                    <li> <a href="/guests">Guests</a> </li>
+                    <li> <a href="/faq">FAQ</a> </li>
+                    <li> <a href="/contact">Contact</a> </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-list" onclick="show()"></i>
+
+
+        </nav>
+
+
+        <div class="text-box">
+            <h1>Special Guests Information</h1>
+
+        </div>
+
+    </section>
+
+
+
+
+<!-- section to add 3 pictures -->
+<section class="events pictures">
+    <h2>Upcoming Special Guests</h2>
+    <p>Here are the special guests that will perform this year on the main stage of Intuitive Festival</p>
+     <div class="row">
+        <div class="col">
+            <img src="images/guest1.jpg" alt="">
+            <div class="layer">
+                <h3>Lost Frequencies</h3>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <img src="images/guest2.jpg" alt="">
+            <div class="layer">
+                <h3>Taylor Swift</h3>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <img src="images/guest3.jpg" alt="">
+            <div class="layer">
+                <h3>Jason Derulo</h3>
+            </div>
+        </div>
+
+     </div>
+     
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- this section will display text data in 3 collums -->
+
+
+    <section class="events festival">
+        <h2>Special guests info</h2>
+        <p>Here are more details about the special guests that are invited to perform on the main stage of Intuitive Festival 2023</p>
+         <div class="row">
+            <div class="col">
+                <h3>Lost Frequencies</h3>
+                <p>Lost Frequencies has gone from rising producer to global superstar in a matter of years, with the introduction of his own Found Frequencies label placing itself as another irresistible pillar not only in his already fruitful career, but as an imprint that has spread the ideology and the union of his music even further.</p>
+            </div>
+
+
+            <div class="col">
+                <h3>Taylor Swift</h3>
+                <p>Taylor Alison Swift is an American singer-songwriter. Recognized for her genre-spanning discography, songwriting, and artistic reinventions, Swift is a prominent cultural figure who has been cited as an influence on a generation of music artists.</p>
+
+            </div>
+
+            <div class="col">
+                <h3>Jason Derulo</h3>
+                <p>American singer-songwriter, has sold over 250 million singles worldwide and has achieved eleven platinum singles including "Wiggle", "Talk Dirty", "Want to Want Me", and many others. Derulo's music is generally pop, but also incorporates R&B and hip-hop influences.
+                </p>
+            </div>
+
+         </div>
+
+    </section>
+
+
+<!-- Footer -->
+
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>This website and its content are copyright of Intuitive LTD - © Intuitive Festival 2023. All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+<p>Copyright to QAHE</p>
+
+</section>
+
+
+
+
+
+<!-- JavaScript -->
+<script>
+    var block = document.getElementById("menu-block");
+    function show() {
+        block.style.right = "0";
+        block.style.transition="1s";
+    }
+
+    function hide() {
+        block.style.right = "-200px";
+        block.style.transition="1s";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!-- //views/contact.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">    
+
+
+</head>
+
+<body>
+
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="" width="130px" height="130px"></a>
+
+            <div class="menu" id="menu-block">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul> 
+                    <li> <a href="/">Home</a></li>
+                    <li> <a href="/events">Events</a> </li>
+                    <li> <a href="/guests">Guests</a> </li>
+                    <li> <a href="/faq">FAQ</a> </li>
+                    <li> <a href="/contact">Contact</a> </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-list" onclick="show()"></i>
+
+
+        </nav>
+
+
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+
+    </section>
+
+<!-- Map -->
+
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4369.673176798761!2d28.653915417366335!3d44.190769341220246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bafac83eece869%3A0xa941e7c026a90f3b!2sZoom%20Beach!5e0!3m2!1sen!2suk!4v1684249315875!5m2!1sen!2suk" width="600" height="450" style="border:1 solid rgb(223, 14, 170);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<!-- Forms Sestion -->
+
+<section class="contact-us">
+    <div class="row">
+
+        <div class="col">
+
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h4>Intuitive Ltd.</h4>
+                    <p>Zoom Beach, Turda Street, <br> Constanta, Romania</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h4>Contact Number</h4>
+                    <p>+40727809012</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h4>E-mail</h4>
+                    <p>info@intuitive.ro</p>
+                </span>
+            </div>
+
+
+        </div>
+
+        <div class="col">
+            <div class="contact-form">
+                <form action="##" name="form1">
+                    <input type="text" id="fname" name="fname" placeholder="First name" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last name" required>
+                    <input type="text" id="emailid" name="emailid" placeholder="E-mail address" required>
+                    <textarea name="subject" id="subject" placeholder="Please enter your message here" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn1" onclick="ValidateEmail(document.form1.emailid)">submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>This website and its content are copyright of Intuitive LTD - © Intuitive Festival 2023. All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+<p>Copyright to QAHE</p>
+
+</section>
+
+
+
+
+
+<!-- JavaScript -->
+<script>
+    var block = document.getElementById("menu-block");
+    function show() {
+        block.style.right = "0";
+        block.style.transition="1s";
+    }
+
+    function hide() {
+        block.style.right = "-200px";
+        block.style.transition="1s";
+    }
+
+
+function ValidateEmail(inputText)
+    {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+            {
+                alert("Valid email address!");
+                document.form1.emailid.focus();
+                return true;
+            }
+        else
+            {
+                alert("You have entered an invalid email address!");
+                document.form1.emailid.focus();
+                return false;
+            }
+    }
+
+</script>
+
+
+
+
+</body>
+</html>

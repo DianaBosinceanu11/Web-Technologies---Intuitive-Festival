@@ -1,0 +1,179 @@
+<!-- //views/events.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">    
+
+
+</head>
+
+<body>
+
+    <section class="events-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="" width="130px" height="130px"></a>
+
+            <div class="menu" id="menu-block">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul> 
+                    <li> <a href="/">Home</a></li>
+                    <li> <a href="/events">Events</a> </li>
+                    <li> <a href="/guests">Guests</a> </li>
+                    <li> <a href="/faq">FAQ</a> </li>
+                    <li> <a href="/contact">Contact</a> </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-list" onclick="show()"></i>
+
+
+        </nav>
+
+
+        <div class="text-box">
+
+            <h1>Intuitive Festival more information! </h1>
+
+        </div>
+
+    </section>
+
+
+
+
+<!-- section to add 3 pictures -->
+<section class="events pictures">
+    <h2>Ongoing Events</h2>
+    <p>Here are the general ongoing information about the events currently going this year on the Intuitive Festival</p>
+     <div class="row">
+        <div class="col">
+            <img src="images/events1.jpg" alt="">
+            <div class="layer">
+                <h3>VR Experience</h3>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <img src="images/events2.jpg" alt="">
+            <div class="layer">
+                <h3>Colour War Game</h3>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <img src="images/events3.jpg" alt="">
+            <div class="layer">
+                <h3>Food Competition</h3>
+            </div>
+        </div>
+
+     </div>
+     
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- this section will display text data in 3 collums -->
+
+
+    <section class="events festival">
+
+         <div class="row">
+            <div class="col">
+                <h3>Games</h3>
+                <p>During all the festival, hypnotizing music, dance and magic cocktails are waitting for you! <br><br> The VR experience will take you through different universes, senses and perceptions. <br><br> If you are brave enough, you can take part to numerous VR games and challenges with your gang.<br><br>In the evening, you can get ready with us for the carnival show by trying the free demonstration of makeup and the numerous costumes available. 
+                </p>
+                <button>Click here for more info</button>
+            </div>
+
+
+            <div class="col">
+                <h3>Challenges</h3>
+                <p>On the second day, take your gang and get ready for the "Colour War" game. <br><br>A free white outfit will be offered, but of course, you can bring yours. Don't worry, the colors don't stain the fabric. <br><br>After such a fun and challenging game you will get hungry, but don't worry, there will be plenty of stands with different dishes for everyone's taste.<br><br>If you just want to relax, you can find nice bars with amazing cocktails on the entire duration of the festival.
+                </p>
+                <button>Click here for more info</button>
+            </div>
+
+
+            <div class="col">
+                <h3>Competition</h3>
+                <p>The food competition is watting for you! All the participants that applied through email on our website, are invited to bring special dishes. Everyone is invited to taste it and to give a mark. The most voted dish will gain an amazing prize which is a holiday in 2 in Tenerife! <br><br>More than that, the water war challenge and different other games are waiting for you! <br><br>The last day makes everyone sad as is almost over, but we want you to smile so we'll be back next year fresh and with more energy!
+                </p>
+                <button>Click here for more info</button>
+            </div>
+
+
+         </div>
+
+    </section>
+
+
+<!-- Footer -->
+
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>This website and its content are copyright of Intuitive LTD - © Intuitive Festival 2023. All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+<p>Copyright to QAHE</p>
+
+</section>
+
+
+
+
+
+<!-- JavaScript -->
+<script>
+    var block = document.getElementById("menu-block");
+    function show() {
+        block.style.right = "0";
+        block.style.transition="1s";
+    }
+
+    function hide() {
+        block.style.right = "-200px";
+        block.style.transition="1s";
+    }
+</script>
+
+</body>
+</html>

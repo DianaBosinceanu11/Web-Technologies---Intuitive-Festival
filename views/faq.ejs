@@ -1,0 +1,151 @@
+<!-- //views/faq.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">    
+
+
+</head>
+
+<body>
+
+    <section class="faq-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="" width="130px" height="130px"></a>
+
+            <div class="menu" id="menu-block">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul> 
+                    <li> <a href="/">Home</a></li>
+                    <li> <a href="/events">Events</a> </li>
+                    <li> <a href="/guests">Guests</a> </li>
+                    <li> <a href="/faq">FAQ</a> </li>
+                    <li> <a href="/contact">Contact</a> </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-list" onclick="show()"></i>
+
+
+        </nav>
+
+
+        <div class="text-box">
+            <h1>Frequently asked questions</h1>
+        </div>
+
+    </section>
+
+
+<!-- Section FAQ -->
+
+<section class="faq">
+
+    <main>
+
+        <details>
+            <summary>Are there any COVID precautions?</summary>
+            <div class="answer">As everyone knows the pandemic is already over. Now it's time for us to have fun and enjoy the freedom!</div>
+        </details>
+
+        <details>
+            <summary>Do you offer student discounts</summary>
+            <div class="answer">Yes, we do offer 40% student discount, if you can provide your student legitimation.</div>
+        </details>
+
+        <details>
+            <summary>I'm I alowed to bring food or drinks from home?</summary>
+            <div class="answer">Unfortunetlly is it not alowed to bring food or liquids for safety purposes. But don't worry, there is no need as there will be many stands with food and bars with drinks and even free samples.</div>
+        </details>
+
+        <details>
+            <summary>Is it alowed smoking?</summary>
+            <div class="answer">Yes! The Festival is in open space therefore smoking is alowed. Special areas for smoking will be provided as well.</div>
+        </details>
+
+        <details>
+            <summary>Where can I do the check-in?</summary>
+            <div class="answer">You can do the check in at the entrence</div>
+        </details>
+
+    </main>
+
+
+</section>
+
+<section faq_button="action">
+    <nav>
+        <a href="/views/faq.ejs"><img src="/images/logo.png" alt="" width="130px" height="130px"></a>
+    </nav>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>This website and its content are copyright of Intuitive LTD - © Intuitive Festival 2023. All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+<p>Copyright to QAHE</p>
+
+</section>
+
+
+
+
+
+<!-- JavaScript -->
+<script>
+    var block = document.getElementById("menu-block");
+    function show() {
+        block.style.right = "0";
+        block.style.transition="1s";
+    }
+
+    function hide() {
+        block.style.right = "-200px";
+        block.style.transition="1s";
+    }
+
+
+function ValidateEmail(inputText)
+    {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+            {
+                alert("Valid email address!");
+                document.form1.emailid.focus();
+                return true;
+            }
+        else
+            {
+                alert("You have entered an invalid email address!");
+                document.form1.emailid.focus();
+                return false;
+            }
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
