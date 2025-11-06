@@ -6,7 +6,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?logo=mysql&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
 
-![Intuitive Festival Preview](public/images/picture1.jpg)
+![Intuitive Festival Preview](public/images/index.PNG)
 
 
 This project was created during my first year at Solent University for the **Web Technologies** module.  
