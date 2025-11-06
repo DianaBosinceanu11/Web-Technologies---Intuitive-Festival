@@ -1,5 +1,14 @@
 # Intuitive Festival - Web Technologies Project
 
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
+![EJS](https://img.shields.io/badge/EJS-8F3F7E)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?logo=mysql&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
+
+![Intuitive Festival Preview](public/images/picture1.jpg)
+
+
 This project was created during my first year at Solent University for the **Web Technologies** module.  
 The goal of the project was to build a dynamic web application using **Node.js**, **Express**, **EJS**, and a **MySQL database**.
 
@@ -43,6 +52,15 @@ npm start
 ```bash
 http://localhost:5000
 ```
+---
+
+## 🎓 What I Learned
+
+- How to structure a Node.js + Express web application
+- How to use EJS to generate dynamic HTML pages
+- How to serve static files and assets in Express
+- Basics of routing, templating, and MVC-like organization
+- Improved my frontend layout and responsive CSS skills
 
 ✨ Features
 - Responsive navigation menu
